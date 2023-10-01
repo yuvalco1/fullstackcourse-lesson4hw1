@@ -24,19 +24,41 @@ public class Main {
 
 //Exercise 2 loops
 //get numbers from user represents meal prices until user enter -1, first get maximum sum, i.e. 500 Nis , check sum before pass limit.
-        System.out.println("please enter sum limit for calculation:");
-        int limit = scanner.nextInt();
-        int sum_meals = 0;
 
-        while (sum_meals <= limit) {
-                System.out.println("please enter meal price:");
-                int meal_price = scanner.nextInt();
-                if ((sum_meals+meal_price)>limit){
-                    break;
-                }
-                sum_meals += meal_price;
+//        System.out.println("please enter sum limit for calculation:");
+//        int limit = scanner.nextInt();
+//        int sum_meals = 0;
+//
+//        while (sum_meals <= limit) {
+//                System.out.println("please enter meal price:");
+//                int meal_price = scanner.nextInt();
+//                if ((sum_meals+meal_price)>limit){
+//                    break;
+//                }
+//                sum_meals += meal_price;
+//
+//           }
+//        System.out.println("total sum of meals is: "+sum_meals);
 
-           }
-        System.out.println("total sum of meals is: "+sum_meals);
+//Exercise 3 loops
+//loop get numbers from user , if even ignore, if odd , sum it, if negative exit , if sum > 1000 exit.
+        int sum_numbers = 0;
+
+        while (true) {
+            System.out.println("please enter number:");
+            int input_number = scanner.nextInt();
+            if (input_number < 0) {
+                break;
+            }
+            if (input_number % 2 == 1) {
+                sum_numbers += input_number;
+            }
+            if (sum_numbers > 1000) {
+                break;
+            }
+        }
+        System.out.println(sum_numbers);
+
+
     }
 }
