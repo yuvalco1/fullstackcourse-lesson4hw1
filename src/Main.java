@@ -42,23 +42,38 @@ public class Main {
 
 //Exercise 3 loops
 //loop get numbers from user , if even ignore, if odd , sum it, if negative exit , if sum > 1000 exit.
-        int sum_numbers = 0;
 
+//        int sum_numbers = 0;
+//        while (true) {
+//            System.out.println("please enter number:");
+//            int input_number = scanner.nextInt();
+//            if (input_number < 0) {
+//                break;
+//            }
+//            if (input_number % 2 == 1) {
+//                sum_numbers += input_number;
+//            }
+//            if (sum_numbers > 1000) {
+//                break;
+//            }
+//        }
+//        System.out.println(sum_numbers);
+
+//Exercise 4 loops
+// draw a random number, ask user to guess, if lower print "too Low", if higer print "too high"; if equal print "BINGO!"
+
+        int random_num = (int) ((Math.random() * 99) + 1);
         while (true) {
-            System.out.println("please enter number:");
+            System.out.println("please guess the number:");
             int input_number = scanner.nextInt();
-            if (input_number < 0) {
-                break;
-            }
-            if (input_number % 2 == 1) {
-                sum_numbers += input_number;
-            }
-            if (sum_numbers > 1000) {
+            if (input_number < random_num) {
+                System.out.println("too low");
+            } else if (input_number > random_num) {
+                System.out.println("too high");
+            } else {
+                System.out.println("BINGO!");
                 break;
             }
         }
-        System.out.println(sum_numbers);
-
-
     }
 }
