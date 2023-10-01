@@ -92,21 +92,36 @@ public class Main {
 //Exercise 7 loops
 //input number from user , check that it is from 1 to 9
 //calculate and print the factorial of that number
-        int input_number = 0;
-        while (true) {
-            System.out.println("please enter number for factorial calculation between 1 and 9:");
-            input_number = scanner.nextInt();
-            if (input_number <= 9 && input_number >= 1) {
-                break;
-            } else {
-                System.out.println("number not in range of 1 to 9, please try again");
-            }
+
+//        int input_number = 0;
+//        while (true) {
+//            System.out.println("please enter number for factorial calculation between 1 and 9:");
+//            input_number = scanner.nextInt();
+//            if (input_number <= 9 && input_number >= 1) {
+//                break;
+//            } else {
+//                System.out.println("number not in range of 1 to 9, please try again");
+//            }
+//        }
+//        int factorial_num = input_number;
+//        for (int i = input_number - 1; i > 1; i--) {
+//            factorial_num *= i;
+//        }
+//        System.out.println("the factorial of: " + input_number + " is: " + factorial_num);
+
+//Exercise 8 loops
+//input  2 numbers from user , calculate multiplier with + only
+
+        int multiply = 0;
+        System.out.println("please enter 2 numbers for multiply calculation:");
+        int num1 = scanner.nextInt();
+        int num2 = scanner.nextInt();
+
+        for (int j=1; j<=num2;j++){
+            multiply += num1;
         }
-        int factorial_num = input_number;
-        for (int i = input_number - 1; i > 1; i--) {
-            factorial_num *= i;
-        }
-        System.out.println("the factorial of: " + input_number + " is: " + factorial_num);
+        System.out.println(multiply);
+
 
     }
 }
