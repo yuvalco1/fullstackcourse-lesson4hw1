@@ -61,19 +61,37 @@ public class Main {
 
 //Exercise 4 loops
 // draw a random number, ask user to guess, if lower print "too Low", if higer print "too high"; if equal print "BINGO!"
+//
+//        int random_num = (int) ((Math.random() * 99) + 1);
+//        while (true) {
+//            System.out.println("please guess the number:");
+//            int input_number = scanner.nextInt();
+//            if (input_number < random_num) {
+//                System.out.println("too low");
+//            } else if (input_number > random_num) {
+//                System.out.println("too high");
+//            } else {
+//                System.out.println("BINGO!");
+//                break;
+//            }
+//        }
+//
 
-        int random_num = (int) ((Math.random() * 99) + 1);
-        while (true) {
-            System.out.println("please guess the number:");
-            int input_number = scanner.nextInt();
-            if (input_number < random_num) {
-                System.out.println("too low");
-            } else if (input_number > random_num) {
-                System.out.println("too high");
-            } else {
-                System.out.println("BINGO!");
-                break;
-            }
+//Exercise 5 loops
+// print all integers from 1 to 100
+        for (int i=1; i<=100; i++){
+            System.out.println(i);
         }
+
+//Exercise 6 loops
+// print all even numbers from 1 to 100
+        for (int i=1; i<=50; i++){
+            System.out.println(i*2);
+        }
+
+
+
+
+
     }
 }
